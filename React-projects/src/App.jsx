@@ -1,6 +1,7 @@
 
 import './App.css'
 import Accordian from './components/Accordian'
+import LoadMore from './components/LoadMore'
 import QrCodeGenrator from './components/QrCodeGenrator'
 import RandomColor from './components/RandomColor'
 import StarRating from './components/StarRating'
@@ -12,7 +13,8 @@ function App() {
       {/* <Accordian/> */}
       {/* <StarRating initialValue={1}/> */}
       {/* <QrCodeGenrator/> */}
-      <RandomColor/>
+      {/* <RandomColor/> */}
+      <LoadMore/>
     </>
   )
 }
