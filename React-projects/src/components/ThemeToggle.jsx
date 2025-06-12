@@ -1,46 +1,35 @@
 import React, { useEffect, useState } from 'react';
 
-const ThemeToggle = () => {
+const App = () => {
   const [theme, setTheme] = useState('light');
 
-  // Load from localStorage
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme') || 'light';
     setTheme(savedTheme);
-    applyTheme(savedTheme);
+    document.documentElement.classList.toggle('dark', savedTheme === 'dark');
+    console.log(document.documentElement.classList)
   }, []);
 
-  // Apply theme class to <html>
-  const applyTheme = (themeMode) => {
-    if (themeMode === 'dark') {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
-  };
-
-  const handleTheme = () => {
+  const toggleTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';
     setTheme(newTheme);
     localStorage.setItem('theme', newTheme);
-    applyTheme(newTheme);
+    document.documentElement.classList.toggle('dark', newTheme === 'dark');
   };
 
   return (
-    <div className="flex justify-center items-center w-full h-screen bg-white dark:bg-gray-900 text-black dark:text-white transition-all">
-      <div>
-        <p className="text-xl font-bold">
-          {theme === 'light' ? 'Light Mode' : 'Dark Mode'}
-        </p>
-        <button
-          onClick={handleTheme}
-          className="border rounded p-2 cursor-pointer my-3"
-        >
-          Toggle Theme
-        </button>
-      </div>
+    <div className="h-screen flex flex-col items-center justify-center bg-white dark:bg-gray-900 text-black dark:text-white transition-all">
+      <h1 className="text-3xl font-bold mb-4">
+        {theme === 'light' ? 'Light Mode' : 'Dark Mode'}
+      </h1>
+      <button
+        onClick={toggleTheme}
+        className="px-6 py-2 rounded bg-black text-white dark:bg-white dark:text-black transition cursor-pointer"
+      >
+        Toggle Theme
+      </button>
     </div>
   );
 };
 
-export default ThemeToggle;
+export default App;
