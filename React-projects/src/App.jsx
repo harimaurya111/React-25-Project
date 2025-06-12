@@ -10,6 +10,8 @@ function App() {
 
   return (
     <>
+
+    
       {/* <Accordian/> */}
       {/* <StarRating initialValue={1}/> */}
       {/* <QrCodeGenrator/> */}
