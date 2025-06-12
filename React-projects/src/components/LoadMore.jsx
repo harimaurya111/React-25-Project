@@ -10,7 +10,7 @@ const LoadMore = () => {
       .then(data => {
         setProducts(data.products);
       });
-  }, []); // 🛠️ Added empty dependency array to avoid repeated fetching
+  }, []); 
 
   function handleMore() {
     setVisible((prev) => prev + 4);
@@ -19,7 +19,6 @@ const LoadMore = () => {
   return (
     <div className='w-full min-h-screen'>
       <h1 className='font-bold text-center text-3xl py-3'>Load More</h1>
-
       <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 place-items-center mt-2 w-full'>
         {
           products.slice(0, visible).map((product, index) => (
@@ -34,8 +33,6 @@ const LoadMore = () => {
           ))
         }
       </div>
-
-      {/* 👉 Only show button if more products are available */}
       {
         visible < products.length && (
           <div className='flex justify-center my-4'>
