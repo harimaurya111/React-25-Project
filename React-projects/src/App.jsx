@@ -1,6 +1,7 @@
 
 import './App.css'
 import Accordian from './components/Accordian'
+import FormHandling from './components/FormHandling'
 import LoadMore from './components/LoadMore'
 import QrCodeGenrator from './components/QrCodeGenrator'
 import RandomColor from './components/RandomColor'
@@ -16,7 +17,8 @@ function App() {
       {/* <QrCodeGenrator/> */}
       {/* <RandomColor/> */}
       {/* <LoadMore/> */}
-      <ThemeToggle/>
+      {/* <ThemeToggle/> */}
+      <FormHandling/>
     </>
   )
 }
