@@ -7,6 +7,7 @@ import QrCodeGenrator from './components/QrCodeGenrator'
 import RandomColor from './components/RandomColor'
 import StarRating from './components/StarRating'
 import ThemeToggle from './components/ThemeToggle'
+import TodiList from './components/TodiList'
 
 function App() {
 
@@ -18,7 +19,8 @@ function App() {
       {/* <RandomColor/> */}
       {/* <LoadMore/> */}
       {/* <ThemeToggle/> */}
-      <FormHandling/>
+      {/* <FormHandling/> */}
+      <TodiList/>
     </>
   )
 }
