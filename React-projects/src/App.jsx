@@ -2,10 +2,12 @@
 import './App.css'
 import Accordian from './components/Accordian'
 import FormHandling from './components/FormHandling'
+import ImageSlider from './components/ImageSlider'
 import LoadMore from './components/LoadMore'
 import QrCodeGenrator from './components/QrCodeGenrator'
 import RandomColor from './components/RandomColor'
 import StarRating from './components/StarRating'
+import Stopwatch from './components/Stopwatch'
 import ThemeToggle from './components/ThemeToggle'
 import TodiList from './components/TodiList'
 
@@ -20,7 +22,9 @@ function App() {
       {/* <LoadMore/> */}
       {/* <ThemeToggle/> */}
       {/* <FormHandling/> */}
-      <TodiList/>
+      {/* <TodiList/> */}
+      {/* <ImageSlider/> */}
+      <Stopwatch/>
     </>
   )
 }

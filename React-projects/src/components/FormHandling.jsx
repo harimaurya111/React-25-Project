@@ -46,7 +46,7 @@ const FormHandling = () => {
 
         if (Object.keys(validationError).length > 0) {
             setError(validationError)
-            
+
         } else {
             console.log( formData)
             alert("Successfull")
@@ -92,3 +92,4 @@ const FormHandling = () => {
 }
 
 export default FormHandling
+
