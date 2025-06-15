@@ -1,6 +1,7 @@
 
 import './App.css'
 import Accordian from './components/Accordian'
+import CountDownTimer from './components/CountDownTimer'
 import FormHandling from './components/FormHandling'
 import ImageSlider from './components/ImageSlider'
 import LoadMore from './components/LoadMore'
@@ -24,7 +25,8 @@ function App() {
       {/* <FormHandling/> */}
       {/* <TodiList/> */}
       {/* <ImageSlider/> */}
-      <Stopwatch/>
+      {/* <Stopwatch/> */}
+      {/* <CountDownTimer  lastDate={new Date('2026-01-15T12:00:00')}/> */}
     </>
   )
 }

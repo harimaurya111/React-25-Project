@@ -37,7 +37,9 @@ function handleReset(){
     <div className='flex justify-center items-center bg-gray-100 w-full h-screen'>
       <div className=' flex justify-between flex-col gap-6 items-center rounded-2xl w-[400px] px-3 py-7 shadow-lg'>
         <h1 className='text-3xl font-semibold text-center'>⌚ Stopwatch </h1>
-        <p className='text-blue-700 text-3xl font-semibold'>{formatTime(time)}</p>
+        <div className='flex items-center justify-center p-4 w-full'>
+           <p className='text-blue-700 text-3xl font-semibold '>{formatTime(time)}</p>
+        </div>
         <div className='flex gap-3'>
           {
             !isRunning ?
