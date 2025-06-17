@@ -5,6 +5,7 @@ import CountDownTimer from './components/CountDownTimer'
 import FormHandling from './components/FormHandling'
 import ImageSlider from './components/ImageSlider'
 import LoadMore from './components/LoadMore'
+import PollApp from './components/PollApp'
 import QrCodeGenrator from './components/QrCodeGenrator'
 import RandomColor from './components/RandomColor'
 import StarRating from './components/StarRating'
@@ -27,6 +28,7 @@ function App() {
       {/* <ImageSlider/> */}
       {/* <Stopwatch/> */}
       {/* <CountDownTimer  lastDate={new Date('2026-01-15T12:00:00')}/> */}
+      <PollApp/>
     </>
   )
 }
