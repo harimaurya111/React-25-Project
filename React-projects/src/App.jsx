@@ -12,6 +12,8 @@ import StarRating from './components/StarRating'
 import Stopwatch from './components/Stopwatch'
 import ThemeToggle from './components/ThemeToggle'
 import TodiList from './components/TodiList'
+import TrafficLight from './components/Calculator'
+import Calculator from './components/Calculator'
 
 function App() {
 
@@ -28,7 +30,8 @@ function App() {
       {/* <ImageSlider/> */}
       {/* <Stopwatch/> */}
       {/* <CountDownTimer  lastDate={new Date('2026-01-15T12:00:00')}/> */}
-      <PollApp/>
+      {/* <PollApp/> */}
+      <Calculator/>
     </>
   )
 }
